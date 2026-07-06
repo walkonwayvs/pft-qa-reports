@@ -39,6 +39,8 @@ This text lives on a separate task and is not visible to jjj on the blocked task
 | Verification response | 2026-07-04 09:47:22 |
 | Reward outcome (25,000 PFT) | 2026-07-04 09:47:47 |
 
+![jjj lifecycle timeline](images/jjj-timeline.png)
+
 **Prerequisite / unblock task (zoz) — `task_e0c135ff`**
 
 | Event | Timestamp (UTC) |
@@ -47,19 +49,21 @@ This text lives on a separate task and is not visible to jjj on the blocked task
 | Task accepted | 2026-07-04 19:59:15 |
 | Reward outcome | 2026-07-04 22:19:47 |
 
-jjj accepted the blocked task at 09:28 on 2026-07-04, roughly 4 hours after zoz's unblock task was offered (05:18) — i.e. acceptance became possible only once the wallet re-route was underway.
-
-![jjj lifecycle timeline](images/jjj-timeline.png)
-
-![zoz task About — wallet prerequisite](images/zoz-task-about.png)
-
 ![zoz lifecycle timeline](images/zoz-timeline.png)
+
+jjj accepted the blocked task at 09:28 on 2026-07-04, roughly 4 hours after zoz's unblock task was offered (05:18) — i.e. acceptance became possible only once the wallet re-route was underway.
 
 ## 4. Dependency visibility
 
-**Finding: No.** The blocked task's detail view ("About This Task") contains no dependency field, prerequisite field, blocked-state indicator, or any text explaining why the task could not be accepted (see screenshot). The only record of the prerequisite lives in a *different* contributor's task (zoz's "About"), which the assigned contributor has no path or reason to view. From jjj's side, the task simply sat un-acceptable with no displayed cause.
+**Finding: No.** The blocked task's detail view ("About This Task") contains no dependency field, prerequisite field, blocked-state indicator, or any text explaining why the task could not be accepted. The only record of the prerequisite lives in a *different* contributor's task (zoz's "About"), which the assigned contributor has no path or reason to view. From jjj's side, the task simply sat un-acceptable with no displayed cause.
+
+Blocked task (jjj) detail view — no dependency or blocked-state field anywhere:
 
 ![jjj task detail — no dependency field](images/jjj-task-detail.png)
+
+The prerequisite reason exists only on zoz's separate task:
+
+![zoz task About — wallet prerequisite](images/zoz-task-about.png)
 
 ## 5. Slot-blocking behaviour (single-task constraint)
 
@@ -79,4 +83,4 @@ The defect asserts that the single-task-at-a-time constraint prevents a contribu
 
 ## 8. Evidence
 
-Screenshots embedded above (public, read-only task records): jjj task detail showing no dependency field; jjj and zoz lifecycle timelines; zoz task "About" stating the wallet prerequisite. Plus the Discord announcement link submitted with this task. All data drawn solely from the public Task Node interface.
+Screenshots embedded above (public, read-only task records): jjj and zoz lifecycle timelines; jjj task detail showing no dependency field; zoz task "About" stating the wallet prerequisite. Plus the Discord announcement link submitted with this task. All data drawn solely from the public Task Node interface.
