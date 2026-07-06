@@ -49,9 +49,17 @@ This text lives on a separate task and is not visible to jjj on the blocked task
 
 jjj accepted the blocked task at 09:28 on 2026-07-04, roughly 4 hours after zoz's unblock task was offered (05:18) — i.e. acceptance became possible only once the wallet re-route was underway.
 
+![jjj lifecycle timeline](images/jjj-timeline.png)
+
+![zoz task About — wallet prerequisite](images/zoz-task-about.png)
+
+![zoz lifecycle timeline](images/zoz-timeline.png)
+
 ## 4. Dependency visibility
 
 **Finding: No.** The blocked task's detail view ("About This Task") contains no dependency field, prerequisite field, blocked-state indicator, or any text explaining why the task could not be accepted (see screenshot). The only record of the prerequisite lives in a *different* contributor's task (zoz's "About"), which the assigned contributor has no path or reason to view. From jjj's side, the task simply sat un-acceptable with no displayed cause.
+
+![jjj task detail — no dependency field](images/jjj-task-detail.png)
 
 ## 5. Slot-blocking behaviour (single-task constraint)
 
@@ -71,4 +79,4 @@ The defect asserts that the single-task-at-a-time constraint prevents a contribu
 
 ## 8. Evidence
 
-Attached screenshots (public, read-only task records): (a) jjj task detail / "About" view showing no dependency field; (b) jjj lifecycle timeline showing the offered→accepted gap; (c) zoz task "About" stating the wallet prerequisite; (d) zoz lifecycle timeline. Plus the Discord announcement link for this task. All data drawn solely from the public Task Node interface.
+Screenshots embedded above (public, read-only task records): jjj task detail showing no dependency field; jjj and zoz lifecycle timelines; zoz task "About" stating the wallet prerequisite. Plus the Discord announcement link submitted with this task. All data drawn solely from the public Task Node interface.
