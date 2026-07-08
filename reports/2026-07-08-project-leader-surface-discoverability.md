@@ -53,11 +53,16 @@ Opening a project shows About, Project Status, board comments, and an activity f
 
 ![Project detail page](images/06-project-detail.png)
 
+### 7. Hive Brain → Board Manager tab
+The Hive Brain view exposes tabs (Overview, Harvests, Docs, Intelligence, **Board Manager**, Operative, Rewarded tasks, KOL). "Board Manager" sounds like a management surface but is an automated *planning report* (Initial report → Agent verification → Final report, feeding the Decision Agent) — read-only generated output, no leader controls to manage a project or route tasks. The sibling tabs (Operative, Rewarded tasks, KOL, Intelligence, Harvests, Docs) are likewise report/read views, not management surfaces. Named the "Board Manager" tab explicitly because it is the closest-sounding candidate and a reviewer would check it.
+
+![Board Manager tab](images/07-board-manager.png)
+
 ---
 
 ## Findings
 
-- The complete visible navigation was walked. No entry — top-level, overflow, profile, Directory, or project detail — exposes a Project Leader dashboard, management console, or leader-only settings surface.
+- The complete visible navigation was walked, including the Hive Brain "Board Manager" tab (the closest-named candidate). No entry — top-level, overflow, profile, Directory, project detail, or any Hive Brain tab — exposes a Project Leader dashboard, management console, or leader-only settings surface. "Board Manager" is an automated report, not a leader control surface.
 - Projects and operators are both *viewable* (Hive project list, project detail pages, Directory leaderboard), but nothing offers *management* affordances scoped to a Project Leader.
 - The absence is consistent across every path, not isolated to one menu.
 
